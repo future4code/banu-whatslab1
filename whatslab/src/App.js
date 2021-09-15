@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { render } from '@testing-library/react';
+import React from 'react';
+import styled from 'styled-components';
 
+const MainContainer = styled.div`
+  display:flex;
+  height: 100vh;
+  background-color: #ededed;
+`
+const Container = styled.div`
+  width:35%;
+  max-width: 415px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ddd;
+`
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  render()
+    return (
+      <MainContainer>
+
+        <Container>
+          <header>
+            <img />
+          </header>
+        </Container>
+        
+        <section>
+        <h1>a..as.d.asd.</h1>
+        </section>
+
+      </MainContainer>
+    );
+  }
 
 export default App;
