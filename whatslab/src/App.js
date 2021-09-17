@@ -1,34 +1,23 @@
 import { render } from '@testing-library/react';
 import React from 'react';
 import styled from 'styled-components';
+import Inputs from './components/inputs/inputs';
 
 const MainContainer = styled.div`
   display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   height: 100vh;
   background-color: #ededed;
+  width: 100vw;
 `
-const Container = styled.div`
-  width:35%;
-  max-width: 415px;
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid #ddd;
-`
+
 function App() {
   render()
     return (
       <MainContainer>
-
-        <Container>
-          <header>
-            <img />
-          </header>
-        </Container>
-        
-        <section>
-        <h1>a..as.d.asd.</h1>
-        </section>
-
+        <Inputs />
       </MainContainer>
     );
   }
